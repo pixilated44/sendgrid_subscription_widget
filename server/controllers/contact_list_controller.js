@@ -95,7 +95,7 @@ exports.sendConfirmation = (req, res, next) => {
 		}
 
 		if (response.statusCode >= 200 && response.statusCode < 300) {
-			res.sendFile(path.join(__dirname, '../static/check-inbox.html'));
+			res.redirect('https://www.tradenavigator.com/confirm-email');
 		} else {
 			res.sendFile(path.join(__dirname, '../static/error.html'));
 		}
