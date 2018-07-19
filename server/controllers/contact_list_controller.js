@@ -23,6 +23,7 @@ function prepareConfirmationEmail(reqBody) {
 	      custom_args: {
 	      	type: optIn,
 	      	time_sent: String(Date.now()),
+		source: "signup_form"
 	      },
 	      substitutions: {
 	      	link_insert: link
