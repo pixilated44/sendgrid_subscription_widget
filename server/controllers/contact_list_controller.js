@@ -8,7 +8,7 @@ const optIn = 'opt-in';
 function prepareConfirmationEmail(reqBody) {
 	const subject = "Please Confirm Your Email Address";
 	const url = formatUrl(Settings.url) + '/success';
-	const link = "<a href='" + url + "'>this link</a>"
+	const link = "<a href='" + url + "'>Click Here to Confirm</a>"
 	const mailText = "Thanks for signing up! Click " + link + " to sign up!  This link will be active for 24 hours.";
 
 	var emailBody = {
